@@ -15,12 +15,17 @@ module.exports = function(grunt) {
             jsDep: {
                 src: [
                     'bower_components/angular/angular.min.js',
+                    'bower_components/jquery/dist/jquery.min.js',
                     'bower_components/angular-route/angular-route.min.js',
+                    'bower_components/bootstrap/dist/js/bootstrap.min.js',
+                    'bower_components/angular-ui-router/release/angular-ui-router.min.js',
                 ],
                 dest: 'assets/js/dist/dependencies.js'
             },
             cssDep: {
                 src: [
+                    'bower_components/bootstrap/dist/css/bootstrap.min.css',
+                    'bower_components/bootstrap/dist/css/bootstrap-theme.min.css',
                     'bower_components/normalize.css/normalize.css',
                     'bower_components/fontawesome/css/font-awesome.min.css',
                 ],
@@ -51,7 +56,8 @@ module.exports = function(grunt) {
                         flatten: true,
                         src: [
                             'bower_components/angular/angular.min.js.map',
-                            'bower_components/angular-route/angular-route.min.js.map'
+                            'bower_components/angular-route/angular-route.min.js.map',
+                            'bower_components/jquery/dist/jquery.min.js.map',
                             ], 
                         dest: 'assets/js/dist/'
                     }
